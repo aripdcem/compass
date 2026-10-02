@@ -8,6 +8,7 @@ ve Kotlin standart kütüphanesi kullanılıyor, kadran `Canvas` ile elle çizil
 Gerçek kuzey, kıble yönü, dokununca yön kilitleyen hedef göstergesi ve kadranın
 göbeğinde su terazisi.
 
+**Google Play: https://play.google.com/store/apps/details?id=com.aripd.kerteriz** (17. bölüm) ·
 **Tanıtım sayfası: https://kerteriz.aripd.com/** (16. bölüm) ·
 **Gizlilik: https://kerteriz.aripd.com/privacy/** (13. ve 16. bölüm)
 
@@ -45,8 +46,15 @@ kerteriz/
 
 ## 1. Hazır APK'yı telefona kurmak
 
+**En kolayı Google Play** — tek dokunuş, güncellemeler kendiliğinden gelir. Bu
+bölüm onun dışındaki yolu anlatıyor: aynı uygulamayı ücretsiz APK olarak
+kurmak. İkisi aynı uygulama ama imzaları farklı (17. bölüm), yani biri ötekinin
+üzerine kurulamaz; geçmek için önce kaldırmak gerekir — ve kaldırmak telefonda
+kaydedilen noktaları da siler.
+
 Derlenmiş APK: `app/build/outputs/apk/debug/app-debug.apk`
-(release sürümü ~130 KB; debug sürümü küçültme yapılmadığı için daha büyüktür)
+(release sürümünün boyutu ve dağılımı 10. bölümde; debug sürümü küçültme
+yapılmadığı için daha büyüktür)
 
 APK'yı kendiniz derlemek zorunda değilsiniz. Her itişte GitHub Actions bir debug
 APK üretip koşunun çıktısına asıyor; `v` ile başlayan her etikette de imzalı bir
@@ -1445,6 +1453,24 @@ hazır olduğu için o yol da çalışır, ama yayımdan önce denetim koşmaz v
 iş akışı silinmeli.
 
 ## 17. Google Play'e yüklemek
+
+**Yayında: https://play.google.com/store/apps/details?id=com.aripd.kerteriz**
+
+| | |
+|---|---|
+| Sürüm | 5.1 (versionCode 36), targetSdk 36 |
+| Ülkeler | 172 — hepsi |
+| Mağaza listesi | 26 dil (nynorsk ile İrlandaca Play'in listesinde yok, aşağıda) |
+| Fiyat | 1,99 € tabanı, Türkiye otomatik çevirimde (aşağıda) |
+| İnceleme | 22 Eylül 2026'da gönderildi, 2 Ekim'de yayındaydı |
+
+Console'un kendi tahmini "tipik olarak yedi gün" idi. Yayına tam hangi gün
+girdiği kayıtlı değil, yalnızca 2 Ekim'de yayında olduğu biliniyor — yani ilk
+inceleme en fazla on gün sürdü. Bir yayın tarihi verilecekse bu üst sınır esas
+alınmalı.
+
+Bölümün geri kalanı ilk yüklemenin kaydı ve bir sonraki sürümün başvurusu:
+yolda çıkan her şart, neden öyle yapıldığıyla birlikte burada.
 
 Play yeni uygulamalarda APK kabul etmiyor; istediği **AAB**. Onu her sürüm
 koşusu üretiyor (15. bölüm): koşunun çıktısında
