@@ -201,6 +201,18 @@
 
   <section class="band narrow" id="install">
     <h2 data-i18n="secInstall">Install it</h2>
+    <!--
+      Play birincil, hero'daki düğme sırasıyla aynı. Adımlar APK içindir;
+      cümle bunu söylüyor ki okuyan Play düğmesinden sonra 1. adıma geçmesi
+      gerektiğini sanmasın. Düğmede data-i18n yok: marka adı, yirmi sekiz dilde
+      aynı. Cümlenin içindeki "Google Play" bağlantı olamıyor, çünkü site.js
+      çeviriyi textContent ile yazıyor ve iç içe bir <a> silinirdi — bağlantı
+      bu yüzden altta ayrı bir düğme.
+    -->
+    <p data-i18n="iPlay">The simplest way is Google Play: one tap, and updates arrive on their own. The steps below are for the APK.</p>
+    <p class="actions">
+      <a class="button primary" href="https://play.google.com/store/apps/details?id=com.aripd.kerteriz">Google Play</a>
+    </p>
     <ol class="steps">
       <li data-i18n="i1">Download the APK from the releases page.</li>
       <li data-i18n="i2">Open the file on the phone and allow installing from this source when Android asks.</li>
